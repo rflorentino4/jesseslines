@@ -99,6 +99,33 @@
         margin-left:70px;
         margin-right:70px; 
         font-size:20px;
+        word-spacing:5px;
+    }
+
+    .center {
+        margin-left: auto;
+        margin-right:auto;
+        border-spacing: 10px;
+    }
+    
+    img {
+        margin-top:30px;
+        border:3px solid black
+    }
+
+    #pagecontent {
+        margin-bottom:100px;
+    }
+    
+    #w2 {
+        margin-top:100px;
+        font-size:larger;
+        word-spacing:3px;
+    }
+
+    li {
+        margin: 10px 0;
+        list-style:none;
     }
 </style>
 
@@ -157,13 +184,96 @@
             <!--company logo-->
             <img src="pictures/J3RLogo.jpg" alt="Picture of the main characters in the anime series" width="250" title="J3R Logo"> <!--*I think* it creates a pop-up of text when you hover on the image *might have done this wrong idk*-->
 
-            <h1>Designed to adapt.</h1> <!--literally in-line with other elements + a tag is considered in-line as well bc multiple show up together in one line ++ when in doubt, try adding a border to something and depending on how it works, inline or block-->
+            <h1><i>Designed to adapt.</i></h1> <!--literally in-line with other elements + a tag is considered in-line as well bc multiple show up together in one line ++ when in doubt, try adding a border to something and depending on how it works, inline or block-->
             <p class="textSettings">At Jesse's Lines, customer security and satisfaction are our utmost priorities. We understand that technology evolves rapidly, so we don't promise our setups will last a lifetime. Instead, we guarantee that our network solutions will adapt to the ever-changing technological landscape, keeping your system secure and up-to-date.</p>
 
-            <h2>
-                THIS IS HOME PAGEEEEEE!
-            </h2>
-        </div><!--end #pagecontent-->
+            <!--KT calls this section below "a shell"-->
+            <div id="w2">
+                <h3><u>Our Commitment to Your Success</u> &#9924;</h3>
+                <!--ordered list of services we provide!-->
+                <ol>
+                <li><b>Expert Network Solutions</b> -- Tailored to fit businesses of all sizes.</li>
+                <li><b>Continuous Adaptability</b> -- Your network will evolve as technology advances.</li>
+                <li><b>Enhanced Security</b> -- Protecting your business from modern cybersecurity threats.</li>
+                <li><b>Customer-Centric Service</b> -- Prioritizing your satisfaction every step of the way.</li>
+                <li><b>Affordable & Scalable</b> -- Flexible solutions that grow with you.</li>
+                </ol>
+            </div> <!--end #w2-->
+
+            
+        </div>
+        <!--end #pagecontent-->
+
+        <!--start of table which prompts user 4 info!!!!-->
+        <table class="center">
+            <thead>
+                <tr> <!--new row-->
+                    <h2>Got a Project in Mind? Let's Chat!</h2>
+                </tr>
+            </thead>
+                
+
+            <tbody> <!--rest of work goes in here-->
+
+                <!--PARENT/GUARDIAN NAME-->
+                <tr> <!--new row-->
+                    <td> <!--new column-->
+                        <label for="gFirst">First and Last Name:</label>
+                    </td>
+                    <td> <!--new column-->
+                        <input type="text" name="gFirst" id="gFirst" placeholder="First Name" required maxlength="20">
+
+                    <br>
+
+                        <input type="text" name="gLast" id="gLast" placeholder="Last Name" required maxlength="20">
+                    </td>
+                </tr>
+
+                <!--CHILD'S NAME-->
+                <tr> <!--new row-->
+                    <td> <!--new column-->
+                        <label for="cFirst">Email or Phone Number:</label>
+                    </td>
+                    <td> <!--new column-->
+                        <input type="text" name="cFirst" id="cFirst" placeholder="Email or Phone #" required maxlength="40">
+                    </td>
+                </tr>
+
+                <tr> <!--CAKE OPTIONS-->
+                    <td> <!--left column-->
+                        <label for="cake">Service Type:</label>
+                    </td>
+
+                    <td> <!--right column-->
+                        <select name="cake">
+                            <option value="choco" style="color:rgb(236, 63, 63)">Network Setup & Configuration</option> <!--when we choose "RED" on the site, which is what shows up for the user, to the computer, we chose "r"-->
+                            <option value="straw" style="color:orangered;">Cybersecurity Consultation</option>
+                            <option value="tres" style="color:rgb(208, 172, 27)">Enterprise Network Solutions</option>
+                            <option value="vani" style="color:green;">Wi-Fi Optimization</option>
+                            <option value="noCake" style="color:rgb(96, 138, 255)">Network Security Audits</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr> <!--COMMENT INFO-->
+                    <td> <!--left column-->
+                        <label for="comments">Message/Question Field:</label>
+                    </td>
+                    <td> <!--right column-->
+                        <textarea name="comments" id="comments" placeholder="Please add any additional comments here." rows="3" cols="35" maxlength="100"></textarea> 
+                    </td>
+                </tr>
+
+
+                <tr> <!--SUBMIT BUTTON INFO-->
+                    <td> <!--left column--></td>
+                    <td> <!--right column - answers/inputs-->
+                        <input type="submit" value="Submit :]"> <!--submit ;] is what shows up on actual site-->
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
 
         <hr>
 
