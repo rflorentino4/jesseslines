@@ -12,7 +12,7 @@
 <!--in document styling-->
 <style>
     body {
-        background-color: #FF87AB;
+        background-color: #ffffff;
         margin: 0;
     }
 
@@ -20,26 +20,26 @@
         width:1000px;
         height:100%;
         margin:auto;
-        background-color:#FFA6C1;
+        background-color:#edede9;
         text-align:center;
         padding:1em;
          }
 
     .button-1 {
-        background-color: #EA4C89;
-        border-radius: 8px;
+        background-color: #555555;
+        /*border-radius: 8px; only use if you want circles Mina !*/
         border-style: none;
         box-sizing: border-box;
         color: #FFFFFF;
         cursor: pointer;
         display: inline-block;
         font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 14px;
+        font-size: 18px;
         font-weight: 500;
         height: 40px;
         line-height: 20px;
         list-style: none;
-        margin: 0;
+        margin-right: 40px;
         outline: none;
         padding: 10px 16px;
         position: relative;
@@ -65,7 +65,42 @@
         display:inline-flex
     }
 
-    </style>
+    .tablink {
+        background-color: #555555;
+        color: white;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        font-size: 17px;
+        width: 25%;
+}
+
+    .tablink:hover {
+        background-color: #777;
+}
+
+/* Style the tab content */
+    .tabcontent {
+        color: white;
+        display: none;
+        padding: 50px;
+        text-align: center;
+        font-size:20px;
+}
+
+    #Home {background-color:#e56b6f;}
+    #Services {background-color:#b56576;}
+    #Contact {background-color:#6d597a;}
+    #Bio {background-color:#355070;}
+
+    .textSettings {
+        margin-left:70px;
+        margin-right:70px; 
+        font-size:20px;
+    }
+</style>
 
 </head> <!--you can collapse entire element by clicking on arrow left of it-->
 <body> <!--all content goes here-->
@@ -73,46 +108,96 @@
     <div id="wrapper">
 
         <hr> <!--in-line element, not block-->
+
         <!--start #header-->
         <div id="header">
-            <!--<h1 class="font"> Jesse the Sheet Whisperer </h1>--> 
+            <div id="Home" class="tabcontent">
+                <h1>Home</h1>
+                <p>Welcome to Jesse's Lines Official Website!</p>
+        </div>
+        <!--end #header-->
+              
+        <div id="Services" class="tabcontent">
+            <h1>Services</h1>
+            <p>Jesse, supported by a skilled team, is here to provide expert network configuration solutions, from small setups to enterprise-level systems, tailored to your needs.</p> 
+        </div>
+              
+        <div id="Bio" class="tabcontent">
+            <h1>Bio</h1>
+            <p>Jesse is a passionate cybersecurity and networking associate student, with hands-on expertise in network configurations. As the lead of a skilled and dedicated team, he provides tailored solutions for everything from small setups to enterprise-level systems, ensuring that every project is handled with the utmost care and precision.</p>
+        </div>
+              
+        <div id="Contact" class="tabcontent">
+            <h1>Contact</h1>
+            <p>Get in touch with us for any questions, inquiries, or assistance—our team is here to help!</p>
+        </div>
 
+        <button class="tablink" onclick="openCity('Home', this, '#e56b6f')" id="defaultOpen">Home</button>
+        <button class="tablink" onclick="openCity('Services', this, '#b56576')">Services</button>
+        <button class="tablink" onclick="openCity('Contact', this, '#6d597a')">Contact</button>
+        <button class="tablink" onclick="openCity('Bio', this, '#355070')">Bio</button>
         </div> <!--end #header-->
+
+        <hr>
+
         <!--start #nav-->
         <div id="nav" class="nav">
             <!--internal page links: RELATIVE PATHS-->
-            <a href="services.html" class="button-1" role="button">SERVICES</a>
-            <a href="index.html" class="button-1" role="button">HOME</a>
-            <h3>THE SHEET COMMANDER</h3>
-            <a href="contact.html" class="button-1" role="button">CONTACT</a>
-            <a href="" class="button-1" role="button">BIO</a>
+            <a href="services.html" class="button-1" role="button">Community</a>
+            <a href="index.html" class="button-1" role="button">Help</a>
+            <a href="contact.html" class="button-1" role="button">Company</a>
+        </div>
+        <!--end #nav-->
 
-        </div><!--end #nav-->
         <!--block elements take up the full width available whereas inline uses what's necessary and can co-exist in the same line-->
         <hr>
+
         <!--start #pagecontent-->
         <div id="pagecontent">
-            <h2><u>ABOUT</u> the series <em>Gintama</em> (2005)</h2> <!--literally in-line with other elements + a tag is considered in-line as well bc multiple show up together in one line ++ when in doubt, try adding a border to something and depending on how it works, inline or block-->
-            <p>The series follows Gintoki, a samurai turned freelancer, as he adventures through an alternate-history late-Edo period (Japan) with his fellow companions.</p>
-            <!--relative image of movie poster-->
-            <img src="pictures/evanedited.png" alt="Picture of the main characters in the anime series" width="500" title="Gintama (2005)"> <!--*I think* it creates a pop-up of text when you hover on the image *might have done this wrong idk*-->
+            <!--company logo-->
+            <img src="pictures/J3RLogo.jpg" alt="Picture of the main characters in the anime series" width="250" title="J3R Logo"> <!--*I think* it creates a pop-up of text when you hover on the image *might have done this wrong idk*-->
+
+            <h1>Designed to adapt.</h1> <!--literally in-line with other elements + a tag is considered in-line as well bc multiple show up together in one line ++ when in doubt, try adding a border to something and depending on how it works, inline or block-->
+            <p class="textSettings">At Jesse's Lines, customer security and satisfaction are our utmost priorities. We understand that technology evolves rapidly, so we don't promise our setups will last a lifetime. Instead, we guarantee that our network solutions will adapt to the ever-changing technological landscape, keeping your system secure and up-to-date.</p>
 
             <h2>
                 THIS IS HOME PAGEEEEEE!
             </h2>
-
         </div><!--end #pagecontent-->
+
         <hr>
+
         <!--start #footer-->
         <div id="footer">
-
             <!--in-page jump link to top-->
-            <a href="#header">BACK TO TOP!</a>
+            <a href="#header">Back to the Top</a>
+            <p>&copy; Romina Florentino &#9924; | NE265.12 | 202520</p>
+        </div> 
+        <!--end #footer-->
 
-            <p>&copy; ROMINA FLORENTINO &#9924; | SE111 | 202420</p>
+    </div> 
+    <!--end #wrapper-->
 
-        </div> <!--end #footer-->
-    </div> <!--end #wrapper-->
+    <!--start of Javascript-->
+    <script>
+        function openCity(cityName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(cityName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+    <!--end of Javascript-->
 
 </body>
 </html>
