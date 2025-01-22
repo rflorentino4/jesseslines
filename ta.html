@@ -10,16 +10,11 @@
 body {
   font-family: "Lato", sans-serif;
   background-color: #F7E1D7;
+  min-height:100vh;
+  display:flex;
+  flex-direction: column;
 }
 
-#wrapper {
-  width:500px;
-  height:auto;
-  margin:500px;
-  background-color:#edede9;
-  text-align:center;
-  padding:1em;
-}
 
 #header {
   padding: 20px;
@@ -46,7 +41,6 @@ body {
   width:auto;
   height:auto;
   margin:auto;
-  background-color:#edede9;
   text-align:center;
   padding:1em;
 }
@@ -79,40 +73,45 @@ body {
   touch-action: manipulation;
 }
 
+.border {
+  border-bottom: 3px solid rgb(0, 0, 0);
+}
+
+#footer {
+  margin-top: auto;
+  position: fixed;
+  bottom:0;
+  left:0;
+  right:0;
+}
+
 </style>
 </head>
 <body>
 <!--start #wrapper/container-->
   <div id="wrapper">
 
-    <hr> <!--in-line element, not block-->
-
     <!--start #header-->
-    <div id="header">
+    <div id="header" class="border">
         <div id="Home" class="tabcontent">
             <h1>Welcome to <span style="color: rgb(217, 6, 6);">Jesse's Lines</span> Internal Website!</h1>
-            <p style="font-size:large;">Please select an option to proceed :]</p>
+            <p style="font-size:larger;">Please select an option to proceed :]</p>
         </div>
     </div>
     <!--end #header-->
 
-    <hr>
-
     <!--start #nav-->
     <div id="nav" class="nav">
-        <a href="test.html" class="tablink" style="background-color: #EDAFB8;" id="button">Home</a>
-        <a href="test2.html" class="tablink" style="background-color: #F7E1D7;" id="button">Employees</a>
-        <a href="test3.html" class="tablink" style="background-color: #B0C4B1;" id="button">Resources</a>
-        <a href="oslo.html" class="tablink" style="background-color: #4A5759;" id="button">Help</a>
+        <a href="test.html" class="tablink" style="background-color: #bc4b51;" id="button">Home</a>
+        <a href="test2.html" class="tablink" style="background-color: #f39e53;" id="button">Employees</a>
+        <a href="test3.html" class="tablink" style="background-color: #efd657;" id="button">Resources</a>
+        <a href="oslo.html" class="tablink" style="background-color: #97bb77;" id="button">Partners</a>
+        <a href="oslo.html" class="tablink" style="background-color: #76a797;" id="button">Help</a>
     </div>
     <!--end #nav-->
 
-    <hr>
-
     <!--start #footer-->
     <div id="footer">
-        <!--in-page jump link to top-->
-        <a href="#header">Back to the Top</a>
         <p>&copy; Romina Florentino &#9924; | NE265.12 |  202520</p>
     </div> 
     <!--end #footer-->
