@@ -1,0 +1,81 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");*/
+
+* {
+    box-sizing:border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#header {
+    background-color: 0,0,0,.6;
+    background-image: url("pictures/headerbackground.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+html, body {
+    margin:0;
+    padding:0;
+}
+
+#nav ol {
+    margin:0;
+}
+
+#nav li {
+    display: inline;
+}
+
+
+#nav:hover {
+    background-color: white.3;
+}
+
+#nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom:1px solid rgb(255,255,255.3);
+    padding:1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-weight: normal;
+    color:rgb(0, 0, 0)
+}
+.nameLarge {
+    padding: 25px;
+    font-size: 7em;
+    color: #ffffff;
+}
+
+#pageContent {
+    margin:1em;
+    max-width: 900px;
+    padding: 0 1.5em;
+    color:#777;
+}
+
+.buttonNav {
+    color: #ffffff;
+    background-color: transparent;
+    cursor: pointer;
+    padding:1em;
+    margin-right: 4em;
+    font-size: larger;
+}
+
+.compButton {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cloud {
+    text-align: center;
+    font-size: 1.8em;
+}
