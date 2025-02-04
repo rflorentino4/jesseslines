@@ -132,6 +132,13 @@
         height:25px;
         margin-top: 40px;
         font-size: medium;
+        background-color: #2f8f34; /* Green background */
+        color: white; /* White text */
+        cursor: pointer; /* Pointer cursor on hover */
+    }
+
+    .centerSub:hover {
+      background-color: #45a049; /* Darker green when hovering */
     }
     
 </style>
@@ -261,7 +268,7 @@
                             <option value="enterprise" style="color:rgb(208, 172, 27)">Enterprise Network Solutions</option>
                             <option value="wifi" style="color:green;">Wi-Fi Optimization</option>
                             <option value="audit" style="color:rgb(96, 138, 255)">Network Security Audits</option>
-                            <option value="other" style="color:#6d597a">Other [please specify below]</option>
+                            <option value="other" style="color:#8841b8">Other [please specify below]</option>
                         </select>
                     </td>
                 </tr>
@@ -276,12 +283,14 @@
                 </tr>
 
 
-                <tr> <!--SUBMIT BUTTON INFO-->
-                    <td> <!--left column--></td>
-                    <td> <!--right column - answers/inputs-->
-                        <input type="submit" value="Submit :]" class="centerSub"> <!--submit ;] is what shows up on actual site-->
+                <tr> <!-- Submit Button Row -->
+                    <td></td> <!-- Left column (empty) -->
+                    <td> <!-- Right column with the submit button -->
+                      <form action="about:blank" method="get" target="_blank">
+                        <input type="submit" value="Submit :]" class="centerSub"> <!-- Button with text Submit :] -->
+                      </form>
                     </td>
-                </tr>
+                  </tr>
 
             </tbody>
         </table>

@@ -1,81 +1,172 @@
-/*@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");*/
-
-* {
-    box-sizing:border-box;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
 #header {
-    background-color: 0,0,0,.6;
-    background-image: url("pictures/headerbackground.jpg");
-    background-blend-mode: multiply;
+    background-image: url('pictures/starryNight.jpg'); /* Replace with your background image */
     background-size: cover;
-    padding-bottom: 30px;
+    background-position: center;
+    background-color: #222;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    position: relative;
 }
 
-html, body {
-    margin:0;
-    padding:0;
-}
+.logo {
+    flex: 1;
+    max-width: 500px;
+    width: 35%;
+    border:2px solid black;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
 
-#nav ol {
-    margin:0;
-}
-
-#nav li {
-    display: inline;
-}
-
-
-#nav:hover {
-    background-color: white.3;
 }
 
 #nav {
-    text-align: center;
-    font-size: 1.1em;
-    font-weight: lighter;
-    border-bottom:1px solid rgb(255,255,255.3);
-    padding:1.5em;
-    color: rgb(255, 255, 255);
+    margin-top: 30px;
 }
 
-.name {
-    text-align: center;
-    margin: 0;
-    font-size: 4em;
-    font-weight: normal;
-    color:rgb(0, 0, 0)
-}
-.nameLarge {
-    padding: 25px;
-    font-size: 7em;
-    color: #ffffff;
+#nav ol {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
 }
 
-#pageContent {
-    margin:1em;
-    max-width: 900px;
-    padding: 0 1.5em;
-    color:#777;
+#nav li {
+    margin: 0 15px;
 }
 
 .buttonNav {
-    color: #ffffff;
     background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 16px;
+    padding: 20px 20px;
     cursor: pointer;
-    padding:1em;
-    margin-right: 4em;
-    font-size: larger;
+    transition: background-color 0.3s;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
+    font-family: 'Poppins', sans-serif; /* More stylish font */
+    letter-spacing: 1px; /* Slight text spacing */
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
 }
 
-.compButton {
-    display: block;
-    text-align: center;
-    cursor: pointer;
+.buttonNav:hover{
+    background-color: rgba(255, 255, 255, 0.2); /* Light hover effect */
+    box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.3);
 }
 
-.cloud {
+.header-content {
+    text-align: center; /* Centers everything */
+    margin-top: 20px; /* Adjust spacing */
+    margin-right: 350px;
+
+}
+
+.nameLarge {
+    font-size: 2.5rem; /* Larger, fancier font */
+    font-weight: bold;
+    color: white; /* Adjust color for contrast */
+    text-transform: uppercase; /* Makes it look more professional */
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.3); /* Subtle glow effect */
+}
+
+/* Footer */
+#footer {
     text-align: center;
-    font-size: 1.8em;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.footerLinks {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.footerLinks li {
+    margin: 0 15px;
+}
+
+.footerLogo {
+    width: 60px; /* Resize footer logos */
+    height: auto;
+    cursor:pointer;
+}
+
+/* Page Content */
+#pageContent {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+h3 {
+    color: #333;
+    font-family: 'Georgia', serif;
+}
+
+.contentText {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+ul, ol {
+    color: #333;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+/* Button inside the header */
+.compButton button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 175px;
+}
+
+.compButton button:hover {
+    background-color: #45a049;
+}
+
+.sidebar {
+    position: fixed;
+    right: 0;
+    top: 50px;
+    width: 150px;
+    height: 200px;
+    background: #EA4C89;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.sidebar-btn {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    background: #F082AC;
+    text-align: center;
 }
