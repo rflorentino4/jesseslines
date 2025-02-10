@@ -11,19 +11,22 @@
 
 <!--in document styling-->
 <style>
+    
     * {
         box-sizing: border-box;
     }
 
     body {
-        background-color: #FF87AB;
         margin: 0;
         padding: 0;
+        height: 100%;
+        overflow:hidden; /*THE KEY TO EVERYTHING APPARENTLY*/
     }
 
     .wrapper {
-        background-color:#FFA6C1;
-        height: 100vh;        
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;   
     }
 
     .sidebar {
@@ -31,23 +34,34 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 20px;
-        justify-content: space-around;
-        height:40vh; 
+        padding: 20px 20px;
+        background-color:#FFB3C6;
+    }
+
+    .bigContent {
+        display: flex;
+        flex:1;
     }
 
     .content {
+        background-color: #FFA6C1;
         width: 75%;
-        padding: 20px;
+        padding: 25px 120px;
+    }
 
+    .content img {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 350px; 
+        height: 250;
     }
 
     .headerTop {
-        background-color: #EA4C89;
-        padding: 40px;
+        background-color: #760421;
+        padding: 20px;
         align-items: center;
         display: flex;
-        position: relative;
         justify-content:space-between;
     }
 
@@ -73,20 +87,33 @@
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
     }
 
-    .headerName {
-        margin:auto;
+    .headerName h1 {
         text-align: center;
-        font-size: medium;
+        margin: 0;
+        font-size: 25px;
+        padding: 5px 5px;
+        background-color:#FB7496;
     }
 
     .footer {
-        background-color: #EA4C89;
-        padding: 40px;
+        background-color: #760421;
+        padding: 20px;
         align-items: center;
-        display: flex;
-        position: relative;
-        justify-content:space-between;
+        width: 100%;
+        margin-top: auto;
+        margin:0;
     }
+
+    hr {
+        border: 1px solid white;
+        margin: 0;
+    }
+
+    .sidebar img {
+        margin-top: 60px;
+        box-shadow: #760421 5px 5px 0px 0px;
+    }
+
     </style>
 
 </head> <!--you can collapse entire element by clicking on arrow left of it-->
@@ -99,6 +126,7 @@
         <div class="headerTop"></div>
         
         <div class="header">
+            <hr>
             <div class="headerName">
                 <h1 class="font">Jesse's Lines &#9924</h1>
             </div>
@@ -106,21 +134,26 @@
             <hr>
         </div>
 
-
+        <div class="bigContent">
         <!--start .sidebar-->
-        <div class="sidebar">
-            <a href="" class="button-1" role="button">Home</a>
-            <a href="evan.html" class="button-1" role="button">Employee Portal</a>
-            <a href="company.html" class="button-1" role="button">Company News</a>
-            <a href="resources.html" class="button-1" role="button">Resources</a>
-            <a href="help.html" class="button-1" role="button">Help</a>
+            <div class="sidebar">
+                <a href="" class="button-1" role="button">Home</a>
+                <a href="evan.html" class="button-1" role="button">Employee Portal</a>
+                <a href="company.html" class="button-1" role="button">Company News</a>
+                <a href="resources.html" class="button-1" role="button">Resources</a>
+                <a href="help.html" class="button-1" role="button">Help</a>
+                <img src="pictures/J3RLogo.jpg" alt="J3R Logo" width="200" height="200">
+            </div>
+            <hr>
+            <!--end .sidebar-->
+            <div class="content">
+                <img src="pictures/sheetwhisperer.png" alt="wm" width="325" height="325">
+                <h1 style="text-align: center;">Ethnic Queen</h1>
+            </div>
         </div>
-        <!--end .sidebar-->
-        <div class="content">
-            
-        </div>
-        <div class="footer">
+        <hr>
 
+        <div class="footer">
         </div>
         <!--end .content-->
     </div>
