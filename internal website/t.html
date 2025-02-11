@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Romina Florentino">
+  <meta name="description" content="AS Capstone Project 2025">
+  <link rel="stylesheet" href="style.css">
+  <title>Jesse's Lines Internal &#9924;</title>  
+</head>
+<body>
+
+<!--start #header-->
+<div id="header">
+    <!-- Navigation bar with logo -->
+    <div id="nav">
+        <img src="pictures/J3RLogo.jpg" alt="Jesse's Lines Logo" class="logo">
+
+        <ol>
+            <li><button class="buttonNav">Company Values</button></li>
+            <li><button class="buttonNav">Founders</button></li>
+            <li><button class="buttonNav">Team Directory</button></li>
+        </ol>
+
+        <div class="sidebar">
+            <a href="#" class="sidebar-btn">Dashboard</a>
+            <a href="#" class="sidebar-btn">Support</a>
+            <a href="#" class="sidebar-btn">Network Status</a>
+            <a href="#" class="sidebar-btn">Documentation</a>
+        </div>
+    </div>
+
+    <!-- Header content -->
+    <div class="header-content">
+        <h1 class="name nameLarge">Jesse's Lines</h1>
+
+        <!-- Button inside the header -->
+        <div class="compButton">
+            <button>Company news!</button>
+        </div>
+    </div>
+</div>
+<!--end #header-->
+
+<!--start #pageContent-->
+<div id="pageContent">
+    <h2>ABOUT</h2>
+    <p class="contentText">Welcome to <b style="color:red">Jesse's Lines</b>, where we empower businesses of all sizes with cutting-edge networking solutions and robust cybersecurity defenses. Our customer-first approach ensures tailored, reliable services, while our employees are the backbone of our success—valued, supported, and generously compensated. Together, we build secure and efficient networks that drive business forward.</p>
+    
+    <h3>Our Services</h3>
+    <ul>
+        <li>Network Setup & Configuration</li>
+        <li>Cybersecurity</li>
+        <li>Enterprise Network Solutions</li>
+        <li>Wi-Fi Optimization</li>
+        <li>Network Security Audits</li>
+    </ul>
+    
+    <h3>Why Stay with Jesse's Lines?</h3>
+    <ol>
+        <li>Premium Benefits That Actually Matter</li>
+        <li>You're More Than Just an Employee Number</li>
+        <li>Work-Life Balance (Yes, We Mean It!)</li>
+    </ol>
+
+    <p class="contentText">Thank you for being a key part of our journey—let's continue to build the future of networking, <b><i>together</i></b>.</p>
+
+    <!-- Added padding before the form -->
+    <div style="padding-top: 20px;"></div>
+
+    <!-- Employee Request Form -->
+    <table class="center">
+        <thead>
+            <tr> <!-- Row 1: Title -->
+                <td colspan="3">
+                    <h2>Need Assistance? Let's Connect!</h2>
+                </td>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <!-- Row 2: Employee Name -->
+            <tr>
+                <td><label for="empFirst">Employee Name:</label></td>
+                <td colspan="2">
+                    <input type="text" name="empFirst" id="empFirst" placeholder="First Name" required maxlength="20">
+                    <input type="text" name="empLast" id="empLast" placeholder="Last Name" required maxlength="20">
+                </td>
+            </tr>
+
+            <!-- Row 3: Department Selection -->
+            <tr>
+                <td><label for="department">Department/Team:</label></td>
+                <td colspan="2">
+                    <select name="department" id="department">
+                        <option value="networking">Networking</option>
+                        <option value="cybersecurity">Cybersecurity</option>
+                        <option value="support">IT Support</option>
+                        <option value="hr">Human Resources</option>
+                        <option value="management">Management</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Row 4: Request Type -->
+            <tr>
+                <td><label for="request">Request Type:</label></td>
+                <td colspan="2">
+                    <select name="request" id="request">
+                        <option value="meeting">Schedule a Meeting</option>
+                        <option value="it-support">IT Support Request</option>
+                        <option value="hr-inquiry">HR Inquiry</option>
+                        <option value="feedback">Submit Feedback</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Row 5: Message/Details -->
+            <tr>
+                <td><label for="message">Additional Details:</label></td>
+                <td colspan="2">
+                    <textarea name="message" id="message" placeholder="Provide any additional details here." rows="3" cols="35" maxlength="150"></textarea>
+                </td>
+            </tr>
+
+            <!-- Row 6: Submit Button -->
+            <tr>
+                <td></td> <!-- Left column (empty) -->
+                <td colspan="2"> 
+                    <form action="about:blank" method="get" target="_blank">
+                        <input type="submit" value="Submit Request" class="centerSub">
+                    </form>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+
+</div>
+<!--end #pageContent-->
+
+<!--start #footer-->
+<div id="footer">
+    <h3 class="name">Jesse's Lines</h3>
+    <ul class="footerLinks">
+        <li><a href="https://www.youtube.com" target="_blank"><img src="pictures/youtubeLogo.png" class="footerLogo" alt="YouTube"></a></li>
+        <li><a href="https://github.com" target="_blank"><img src="pictures/GitHub-logo.png" class="footerLogo" alt="GitHub"></a></li>
+        <li><a href="https://www.linkedin.com" target="_blank"><img src="pictures/Linkedin-Logo.png" class="footerLogo" alt="LinkedIn"></a></li>
+    </ul>
+</div>
+<!--end #footer-->
+
+</body>
+</html>

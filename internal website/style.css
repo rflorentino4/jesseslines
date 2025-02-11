@@ -169,3 +169,14 @@ ol {
     background: #F082AC;
     text-align: center;
 }
+
+.centerSub {
+    display:flex;
+    justify-content: center;
+    height:25px;
+    margin-top: 40px;
+    font-size: medium;
+    background-color: #2f8f34; /* Green background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
