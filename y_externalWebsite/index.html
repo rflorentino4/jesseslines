@@ -141,35 +141,29 @@
       background-color: #45a049; /* Darker green when hovering */
     }
 
+    .footerImages {
+        position:absolute;
+        bottom:10px;
+        right:10px;
+    }
+
+    .footerImages img {
+        border:none;
+        margin:0;
+        padding: 0;
+    }
+
+    .footerIssues {
+        display:flex;
+        
+    }
+    
     #footer {
-    position: relative;
-    padding: 20px;
-    background-color: #f1f1f1;
-    display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center the content */
-    justify-content: center; /* Make sure it is centered vertically */
-}
-
-.footerIssues {
-    text-align: center; /* Center the text and link */
-    margin-bottom: 10px; /* Space between text and images */
-}
-
-.footerImages {
-    position: absolute; /* Keep images in the bottom-right corner */
-    right: 20px; /* Adjust distance from the right edge */
-    bottom: 10px; /* Adjust distance from the bottom edge */
-    display: flex;
-    gap: 10px;
-}
-
-.footerImages img {
-    border: none;
-    margin: 0;
-    padding: 0;
-}
-
+        display:inline-block;
+        justify-content: center;
+        position: relative;
+        padding: 20px;
+    }
 </style>
 
 </head> <!--you can collapse entire element by clicking on arrow left of it-->
@@ -227,7 +221,7 @@
         <!--start #pagecontent-->
         <div id="pagecontent">
             <!--company logo-->
-            <img src="pictures/J3RLogo.jpg" alt="Company logo for Jesse's Lines, image displays J3R" width="250" title="J3R Logo"> <!--*I think* title creates a pop-up of text when you hover on the image *might have done this wrong idk*-->
+            <img src="y_externalWebsite\pictures\J3RLogo.jpg" alt="Company logo for Jesse's Lines, image displays J3R" width="250" title="J3R Logo"> <!--*I think* title creates a pop-up of text when you hover on the image *might have done this wrong idk*-->
 
             <h1><i>Designed to adapt.</i></h1> <!--literally in-line with other elements + a tag is considered in-line as well bc multiple show up together in one line ++ when in doubt, try adding a border to something and depending on how it works, inline or block-->
             <p class="textSettings">At Jesse's Lines, customer security and satisfaction are our utmost priorities. We understand that technology evolves rapidly, so we don't promise our setups will last a lifetime. Instead, we guarantee that our network solutions will adapt to the ever-changing technological landscape, keeping your system secure and up-to-date.</p>
@@ -331,13 +325,11 @@
             <a href="#header">Back to the Top</a>
             
             <div class="footerIssues">
-                <!--in-page jump link to top-->
                 <p>&copy; Romina Florentino &#9924; | NE265.12 | 202520</p>
-            
-                <div class="footerImages">
-                <a href="community.html"><img src="internal website\pictures\GitHub-logo.png" alt="Github Logo" width="50"></a>
-                <a href="company.html"><img src="internal website\pictures\youtubeLogo.png" alt="LinkedIn Logo" width="50"></a>
-                </div>
+            </div>
+            <div class="footerImages">
+                <a href="community.html"><img src="y_externalWebsite\pictures\GitHub-logo.png" alt="Github Logo" width="50"></a>
+                <a href="company.html"><img src="y_externalWebsite\pictures\youtubeLogo.png" alt="LinkedIn Logo" width="50"></a>
             </div>
         </div> 
         <!--end #footer-->

@@ -1,8 +1,8 @@
 #header {
     background-size: cover;
     background-position: center;
-    background-color: #222;
-    padding: 50px;
+    background-color: #607D8B;
+    padding: 30px;
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -12,12 +12,12 @@
 
 .logo {
     flex: 1;
-    max-width: 500px;
-    width: 35%;
-    border:2px solid black;
+    max-width: 400px;
+    width: 30%;
+    border:2px solid #B0BEC5;
     margin-bottom: 30px;
     box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
-
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 #nav {
@@ -37,10 +37,10 @@
 
 .buttonNav {
     background-color: transparent;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid #b2d8b3;
+    color: #b2d8b3;
     font-size: 16px;
-    padding: 20px 20px;
+    padding: 20px 30px;
     cursor: pointer;
     transition: background-color 0.3s;
     box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.2);
@@ -61,26 +61,25 @@
 
 .header-content {
     text-align: center; /* Centers everything */
-    margin-top: 20px; /* Adjust spacing */
+    margin-top: 25px; /* Adjust spacing */
     margin-right: 350px;
 
 }
 
 .nameLarge {
-    font-size: 2.5rem; /* Larger, fancier font */
+    font-size: 2rem; /* Larger, fancier font */
     font-weight: bold;
-    color: white; /* Adjust color for contrast */
+    color: #FFFFFF; /* Adjust color for contrast */
     text-transform: uppercase; /* Makes it look more professional */
     letter-spacing: 2px;
-    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.3); /* Subtle glow effect */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle shadow for text */
 }
 
 /* Footer */
 #footer {
     text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+    padding: 10px 20px;
+    background-color: #444;
 }
 
 .footerLinks {
@@ -88,6 +87,7 @@
     display: flex;
     justify-content: center;
     padding: 0;
+    margin-top: 20px;
 }
 
 .footerLinks li {
@@ -114,6 +114,12 @@ h3 {
     color: #333;
     font-family: 'Georgia', serif;
 }
+
+#footer h3 {
+    color: #222;
+    text-shadow: 2px 2px 4px rgba(113, 113, 113, 0.3);
+}
+
 
 .contentText {
     font-size: 16px;
@@ -179,4 +185,8 @@ ol {
     background-color: #2f8f34; /* Green background */
     color: white; /* White text */
     cursor: pointer; /* Pointer cursor on hover */
+}
+
+body {
+    background-color: #f5f5f5;
 }
